@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:id="@+id/mFrameContainers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="LỚP HỌC MỚI NHẤT"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:id="@+id/mLinearProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:background="@drawable/bg_shadow_add"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:gravity="center"
+                        android:text="THÔNG TIN HỌC SINH"
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lớp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvClass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="4"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Môn"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvCaseClass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Toán"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Địa chỉ"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="112 Núi Thành, Hải Châu, Đà Nẵng"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trường"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvSchool"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Kiến Trúc Đà Nẵng"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số lượng học sinh"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvNumStudent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số buổi/tuần"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvHomeWork"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="3"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ngày bắt đầu"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvDateStart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="8h, 2/12/2018"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lịch trình"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvSchedule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="8h, 2/12/2018"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tên phụ huynh"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvVisu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="8h, 2/12/2018"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                    </RelativeLayout>
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:text="YÊU CẦU GIA SƯ"
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Giới tính"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Nữ"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Học phí"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvTotalFee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="1.2tr"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quê quán"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvHomeTown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Quảng Nam, Đà Nẵng"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trường"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvSchoolTtuto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Kiến trúc Đà Nẵng"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <danazone.com.vitu.CircleImageView
+                    android:id="@+id/banner"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/banner" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_17sdp"
+        android:layout_marginRight="@dimen/_17sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_main"
+            android:gravity="center"
+            android:text="Bỏ qua"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTvSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_main"
+            android:gravity="center"
+            android:text="Nhận ngay"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

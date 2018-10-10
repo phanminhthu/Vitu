@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/bg_shadow_textview"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mTvStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableLeft="@drawable/ic_alarm"
+        android:drawablePadding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:text="2/11/2018"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mTvID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableLeft="@drawable/ic_alarm"
+        android:drawablePadding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:text="xxxx-xxx-xxxx"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mTvClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableLeft="@drawable/ic_alarm"
+        android:drawablePadding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:text="12"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/mTvCaseClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableLeft="@drawable/ic_alarm"
+        android:drawablePadding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:text="19h-21h"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableLeft="@drawable/ic_alarm"
+        android:drawablePadding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:text="Toán"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp" />
+</LinearLayout>

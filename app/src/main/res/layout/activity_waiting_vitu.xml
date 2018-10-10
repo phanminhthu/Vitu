@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/colorMain"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:text="@string/vitu_base"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dialog_cancel"
+                android:gravity="center"
+                android:text="Đang chờ xác nhận từ phụ huynh..."
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="THỜI GIAN CHỜ CÒN LẠI"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:id="@+id/mLinearProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:background="@drawable/bg_shadow_add"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:gravity="center"
+                        android:text="CHÚC MỪNG BẠN ĐÃ ĐƯỢC CHỌN LÀM GIA SƯ"
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/mEdtPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/bg_shadow_textview"
+                        android:gravity="center_horizontal"
+                        android:hint="Nhập số điện thoại"
+                        android:textColor="@color/colorMain"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/mTvSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:background="@drawable/bg_button_main"
+                        android:gravity="center"
+                        android:text="Xác nhận"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:text="THÔNG TIN GIAO DỊCH"
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mã giao dịch VITTU"
+                            android:textColor="@color/colorMain"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Trần Đình Trọng"
+                            android:textColor="@color/colorMain"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tên Gia Sư"
+                            android:textColor="@color/colorMain"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Thế Anh"
+                            android:textColor="@color/colorMain"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SĐT"
+                            android:textColor="@color/colorMain"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="012345678"
+                            android:textColor="@color/colorMain"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shadow_textview">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Địa chỉ"
+                            android:textColor="@color/colorMain"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/mTvPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="112 Núi Thành, Đà Nẵng"
+                            android:textColor="@color/colorMain"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:text="Hệ thống đã trừ đi 10 điểm trong số dư tài khoản của quý khách. Xin cảm ơn!"
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <danazone.com.vitu.CircleImageView
+                    android:id="@+id/banner"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/banner" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

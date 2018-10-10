@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //dialog
+    <dimen name="dialog_cancel">-10dp</dimen>
+    <dimen name="app_bar">-20dp</dimen>
+</resources>
